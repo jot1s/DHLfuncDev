@@ -7,27 +7,84 @@ import openpyxl as xl_read
 import xlsxwriter as xl_writer
 
 path = "C:\\game\\DHLfuncDev\\DHL_API_Sheet.xlsx"
+wb_obj = xl_read.load_workbook(path)
+sheetName = "Sheet1"
+baseRow = 1   ## base row start with row 2
+sheet_obj = wb_obj[sheetName]   ## checking the sheet object in the page call "Sheet1"
 
-params = urllib.parse.urlencode({
-    'trackingNumber': '6921406671',
-    'service': 'express'
-})
+def SendAPI(trackingNumber):
+    params = urllib.parse.urlencode({
+        # 'trackingNumber': '6921406671',
+        'trackingNumber': "'" + str(trackingNumber) + "'",
+        'service': 'express'
+    })
 
-headers = {
-    'Accept': 'application/json',
-    'DHL-API-Key': 'apI1hL9eB7gG7b'
-}
+    headers = {
+        'Accept': 'application/json',
+        'DHL-API-Key': 'apI1hL9eB7gG7b'
+    }
 
-connection = http.client.HTTPSConnection("api-eu.dhl.com")
+    connection = http.client.HTTPSConnection("api-eu.dhl.com")
 
-connection.request("GET", "/track/shipments?" + params, "", headers)
-response = connection.getresponse()
+    connection.request("GET", "/track/shipments?" + params, "", headers)
+    response = connection.getresponse()
 
-status = response.status
-reason = response.reason
-data = json.loads(response.read())
+    status = response.status
+    reason = response.reason
+    data = json.loads(response.read())
 
-print("Status: {} and reason: {}".format(status, reason))
-print(data)
+    print("Status: {} and reason: {}".format(status, reason))
+    print(data)
+    
+    connection.close()
+    return data
 
-connection.close()
+def CheckInfo_API(trackingNumber, x, y):
+    print("trackingNumber: ", trackingNumber  , "Row: " ,x , "Column: " ,y)
+    SendAPI(trackingNumber)
+
+
+
+for i in range(1, 5):
+    status_row = sheet_obj.cell( baseRow + i, 3).value
+    trackingNumber_row  = sheet_obj.cell( baseRow + i, 1).value  
+    # print("sheet_obj: ", sheet_obj.cell( baseRow + i, 3).value)  ##Checking Status
+    
+    if status_row == None and trackingNumber_row != None:  ##  is None
+        CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
+    else:
+        print("Status: ", status_row)
+
+
+
+#     if (sheet_obj[
+#     print("sheet_obj: ", sheet_obj.cell(i, 1).value)  ## (1,1) output "Tracking Number" (A1)
+
+# trackingNumber = sheet_obj.cell(2, 1).value
+# print( "sheet_obj: ",  sheet_obj.cell(2, 1).value  )  ## (1,1) output "Tracking Number" (A1)
+
+
+# params = urllib.parse.urlencode({
+#     # 'trackingNumber': '6921406671',
+#     # 'trackingNumber': "'" + str(trackingNumber) + "'",
+#     'service': 'express'
+# })
+
+# headers = {
+#     'Accept': 'application/json',
+#     'DHL-API-Key': 'apI1hL9eB7gG7b'
+# }
+
+# connection = http.client.HTTPSConnection("api-eu.dhl.com")
+
+# connection.request("GET", "/track/shipments?" + params, "", headers)
+# response = connection.getresponse()
+
+# status = response.status
+# reason = response.reason
+# data = json.loads(response.read())
+
+# print("Status: {} and reason: {}".format(status, reason))
+# print(data)
+
+# connection.close()
