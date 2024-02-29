@@ -2,6 +2,10 @@ import http.client
 import urllib.parse
 import json
 
+# Import modules for Excel handling
+import openpyxl as xl_read
+import xlsxwriter as xl_writer
+
 params = urllib.parse.urlencode({
     'trackingNumber': '6921406671',
     'service': 'express'
