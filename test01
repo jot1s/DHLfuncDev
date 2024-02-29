@@ -41,7 +41,15 @@ def SendAPI(trackingNumber):
 
 def CheckInfo_API(trackingNumber, x, y):
     print("trackingNumber: ", trackingNumber  , "Row: " ,x , "Column: " ,y)
-    SendAPI(trackingNumber)
+
+    api_response = SendAPI(trackingNumber)
+    # Access and process JSON data as needed
+    shipments = api_response.get('shipments', [])
+    for shipment in shipments:
+        # print("Shipment ID:", shipment.get('id'))
+        status = shipment.get('status', {}).get('status') ## shipments status status
+        print("Status:", status)
+
 
 
 
@@ -53,7 +61,7 @@ for i in range(1, 5):
     if status_row == None and trackingNumber_row != None:  ##  is None
         CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
     else:
-        print("Status: ", status_row)
+        print("Status and TrackingNumber == None ", status_row)
 
 
 
