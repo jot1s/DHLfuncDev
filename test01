@@ -6,6 +6,8 @@ import json
 import openpyxl as xl_read
 import xlsxwriter as xl_writer
 
+path = "C:\\game\\DHLfuncDev\\DHL_API_Sheet.xlsx"
+
 params = urllib.parse.urlencode({
     'trackingNumber': '6921406671',
     'service': 'express'
