@@ -55,13 +55,13 @@ def CheckInfo_API(trackingNumber, x, y):
         event = shipment['events'][0]  
     
         print("Status:", status , "OriginAddress:" , origin_address , "DestinationAddress:" , destination_address)
-        WirteInfo_excel(x, 3 , status )  ## status column 3 = C
-        WirteInfo_excel(x, 4 , origin_address )  ## status column 4 = D
-        WirteInfo_excel(x, 5 , destination_address ) ## status column 5 = E
-        WirteInfo_excel(x, 6 , str(event) )
+        WriteInfo_excel(x, 3 , status )  ## status column 3 = C
+        WriteInfo_excel(x, 4 , origin_address )  ## status column 4 = D
+        WriteInfo_excel(x, 5 , destination_address ) ## status column 5 = E
+        WriteInfo_excel(x, 6 , str(event) )
 
-def WirteInfo_excel(x, y, value):
-    print("WirteInfo_excel: ", x, y, value)
+def WriteInfo_excel(x, y, value):
+    print("WriteInfo_excel: ", x, y, value)
     sheet_obj.cell(x, y).value = value
     wb_obj.save(path)
 
