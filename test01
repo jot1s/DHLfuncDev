@@ -44,20 +44,36 @@ def CheckInfo_API(trackingNumber, x, y):
 
     api_response = SendAPI(trackingNumber)
     # Access and process JSON data as needed
-    shipments = api_response.get('shipments', [])
+    shipments = api_response['shipments']
     for shipment in shipments:
         # print("Shipment ID:", shipment.get('id'))
-        status = shipment.get('status', {}).get('status') ## shipments status status
-        print("Status:", status)
+        # status = shipment.get('status', {}).get('status') ## shipments status status
+        status = shipment['status']['status'] ## shipments status status
+        origin_address = shipment['origin']['address']['addressLocality']  # Corrected 'addressLocality'
+        destination_address = shipment['destination']['address']['addressLocality']  # Corrected 'addressLocality'
+        
+        event = shipment['events'][0]  
+    
+        print("Status:", status , "OriginAddress:" , origin_address , "DestinationAddress:" , destination_address)
+        WirteInfo_excel(x, 3 , status )  ## status column 3 = C
+        WirteInfo_excel(x, 4 , origin_address )  ## status column 4 = D
+        WirteInfo_excel(x, 5 , destination_address ) ## status column 5 = E
+        WirteInfo_excel(x, 6 , str(event) )
+
+def WirteInfo_excel(x, y, value):
+    print("WirteInfo_excel: ", x, y, value)
+    sheet_obj.cell(x, y).value = value
+    wb_obj.save(path)
 
 
-
-
-for i in range(1, 5):
+for i in range(1, 10):   ## for loop row to check trackingnumber is exist
     status_row = sheet_obj.cell( baseRow + i, 3).value
     trackingNumber_row  = sheet_obj.cell( baseRow + i, 1).value  
     # print("sheet_obj: ", sheet_obj.cell( baseRow + i, 3).value)  ##Checking Status
     
+    if trackingNumber_row == None:
+        break
+
     if status_row == None and trackingNumber_row != None:  ##  is None
         CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
     else:
