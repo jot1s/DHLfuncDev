@@ -2,9 +2,12 @@ import http.client
 import urllib.parse
 import json
 
+import datetime , os
 # Import modules for Excel handling
 import openpyxl as xl_read
 import xlsxwriter as xl_writer
+import PySimpleGUI as sg
+
 
 path = "C:\\game\\DHLfuncDev\\DHL_API_Sheet.xlsx"
 wb_obj = xl_read.load_workbook(path)
@@ -66,19 +69,42 @@ def WriteInfo_excel(x, y, value):
     wb_obj.save(path)
 
 
-for i in range(1, 10):   ## for loop row to check trackingnumber is exist
-    status_row = sheet_obj.cell( baseRow + i, 3).value
-    trackingNumber_row  = sheet_obj.cell( baseRow + i, 1).value  
-    # print("sheet_obj: ", sheet_obj.cell( baseRow + i, 3).value)  ##Checking Status
+
+sg.theme('Dark Brown')   
+
+
+layout = [
+
+    [sg.Text("Auto fill-in Excel" , justification='center',size=(50,1))],
+    [sg.Button('Open Excel'), sg.Button('Run API')]
     
-    if trackingNumber_row == None:
+]
+
+window = sg.Window("Column Demo", layout)
+while True:
+    event, values = window.read()
+    
+    if event == "Open Excel":
+        os.startfile(path)
         break
+    
+    if event == "Run API":
 
-    if status_row == None and trackingNumber_row != None:  ##  is None
-        CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
-    else:
-        print("Status and TrackingNumber == None ", status_row)
+        for i in range(1, 10):   ## for loop row to check trackingnumber is exist
+            status_row = sheet_obj.cell( baseRow + i, 3).value
+            trackingNumber_row  = sheet_obj.cell( baseRow + i, 1).value  
+            # print("sheet_obj: ", sheet_obj.cell( baseRow + i, 3).value)  ##Checking Status
+            
+            if trackingNumber_row == None:
+                break
 
+            if status_row == None and trackingNumber_row != None:  ##  is None
+                CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
+            else:
+                print("Status and TrackingNumber == None ", status_row)
+
+    
+window.close()
 
 
 #     if (sheet_obj[
