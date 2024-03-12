@@ -1,15 +1,23 @@
 import http.client
 import urllib.parse
 import json
-
-import datetime , os
+from datetime import datetime
+import os
 # Import modules for Excel handling
 import openpyxl as xl_read
 import xlsxwriter as xl_writer
 import PySimpleGUI as sg
+import pandas as pd
 
 
-path = "C:\\game\\DHLfuncDev\\DHL_API_Sheet.xlsx"
+# path = "C:\\game\\DHLfuncDev\\DHL_API_Sheet.xlsx"
+
+current_directory = os.path.dirname(__file__)
+# Construct the new path relative to the current directory
+path = os.path.join(current_directory, "DHL_API_Sheet.xlsx")
+# Use the new path
+print("Relative path:", path)
+
 wb_obj = xl_read.load_workbook(path)
 sheetName = "Sheet1"
 baseRow = 1   ## base row start with row 2
@@ -44,24 +52,41 @@ def SendAPI(trackingNumber):
 
 def CheckInfo_API(trackingNumber, x, y):
     print("trackingNumber: ", trackingNumber  , "Row: " ,x , "Column: " ,y)
-
-    api_response = SendAPI(trackingNumber)
-    # Access and process JSON data as needed
-    shipments = api_response['shipments']
-    for shipment in shipments:
-        # print("Shipment ID:", shipment.get('id'))
-        # status = shipment.get('status', {}).get('status') ## shipments status status
-        status = shipment['status']['status'] ## shipments status status
-        origin_address = shipment['origin']['address']['addressLocality']  # Corrected 'addressLocality'
-        destination_address = shipment['destination']['address']['addressLocality']  # Corrected 'addressLocality'
-        
-        event = shipment['events'][0]  
     
-        print("Status:", status , "OriginAddress:" , origin_address , "DestinationAddress:" , destination_address)
-        WriteInfo_excel(x, 3 , status )  ## status column 3 = C
-        WriteInfo_excel(x, 4 , origin_address )  ## status column 4 = D
-        WriteInfo_excel(x, 5 , destination_address ) ## status column 5 = E
-        WriteInfo_excel(x, 6 , str(event) )
+    data = SendAPI(trackingNumber)
+    # 提取需要的信息
+    desired_info = data['shipments'][0]['events'][0]['description']
+    end_time=data['shipments'][0]['events'][0]['timestamp']
+    start_time=data['shipments'][0]['events'][-1]['timestamp']
+    status = data['shipments'][0]['status']['status']
+    origin = data['shipments'][0]['origin']['address']['addressLocality']
+    destination = data['shipments'][0]['destination']['address']['addressLocality']
+    print(status)
+    print(origin)
+    print(destination)
+    print(end_time)
+    print(start_time)
+    
+    # Parse ISO formatted date-time
+    end_datetime = datetime.strptime(end_time, "%Y-%m-%dT%H:%M:%S")
+    start_datetime = datetime.strptime(start_time, "%Y-%m-%dT%H:%M:%S")
+
+    # Format as Excel-compatible date and time strings
+    # excel_date = parsed_datetime.strftime("%Y-%m-%d")
+    # excel_time = parsed_datetime.strftime("%H:%M:%S")
+    duration_time = end_datetime - start_datetime
+    # print("Excel Date:", excel_date)
+    # print("Excel Time:", excel_time)
+    print(duration_time)
+    
+    WriteInfo_excel(x, 3 , status )  ## status column 
+    WriteInfo_excel(x, 4 , origin )  ## status column 
+    WriteInfo_excel(x, 5 , start_datetime )  ## status column 
+    WriteInfo_excel(x, 6 , destination ) ## status column 
+    WriteInfo_excel(x, 7 , end_datetime ) ## status column 
+    WriteInfo_excel(x, 8 , duration_time ) ## status column 
+    # WriteInfo_excel(x, 6 , str(event) )
+    
 
 def WriteInfo_excel(x, y, value):
     print("WriteInfo_excel: ", x, y, value)
@@ -76,7 +101,7 @@ sg.theme('Dark Brown')
 layout = [
 
     [sg.Text("Auto fill-in Excel" , justification='center',size=(50,1))],
-    [sg.Button('Open Excel'), sg.Button('Run API')]
+    [sg.Button('Open Excel'), sg.Button('TrackingNumber API fillin')]
     
 ]
 
@@ -88,7 +113,7 @@ while True:
         os.startfile(path)
         break
     
-    if event == "Run API":
+    if event == "TrackingNumber API fillin":
 
         for i in range(1, 10):   ## for loop row to check trackingnumber is exist
             status_row = sheet_obj.cell( baseRow + i, 3).value
@@ -102,8 +127,16 @@ while True:
                 CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
             else:
                 print("Status and TrackingNumber == None ", status_row)
+        
+        # 读取 Excel 文件
+        # df = pd.read_excel(r"C:\game\DHLfuncDev\DHL_API_Sheet.xlsx", engine='openpyxl')
 
-    
+        # # 将整列数据转换为列表
+        # column_list = df.iloc[:, 0].tolist()  # 使用 iloc 方法来选择列，索引 0 表示第一列
+
+        # print(column_list)
+        
+  
 window.close()
 
 
