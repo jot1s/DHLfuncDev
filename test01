@@ -1,6 +1,7 @@
 import http.client
 import urllib.parse
 import json
+import time
 from datetime import datetime
 import os
 # Import modules for Excel handling
@@ -124,9 +125,12 @@ while True:
                 break
 
             if status_row == None and trackingNumber_row != None:  ##  is None
+                # time.sleep(0.5)  # Add a delay of 0.2 seconds   
                 CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
             else:
                 print("Status and TrackingNumber == None ", status_row)
+        
+        
         
         # 读取 Excel 文件
         # df = pd.read_excel(r"C:\game\DHLfuncDev\DHL_API_Sheet.xlsx", engine='openpyxl')

@@ -1,0 +1,1142 @@
+{
+  "Afghanistan": {
+    "CountryCode": "AF",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Albania": {
+    "CountryCode": "AL",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Algeria": {
+    "CountryCode": "DZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "American Samoa": {
+    "CountryCode": "AS",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Andorra": {
+    "CountryCode": "AD",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Angola": {
+    "CountryCode": "AO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Anguilla": {
+    "CountryCode": "AI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Antigua": {
+    "CountryCode": "AG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Argentina": {
+    "CountryCode": "AR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Armenia": {
+    "CountryCode": "AM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Aruba": {
+    "CountryCode": "AW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Australia": {
+    "CountryCode": "AU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Austria": {
+    "CountryCode": "AT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 3
+  },
+  "Azerbaijan": {
+    "CountryCode": "AZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Bahamas": {
+    "CountryCode": "BS",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Bahrain": {
+    "CountryCode": "BH",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Bangladesh": {
+    "CountryCode": "BD",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Barbados": {
+    "CountryCode": "BB",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Belarus": {
+    "CountryCode": "BY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Belgium": {
+    "CountryCode": "BE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 1
+  },
+  "Belize": {
+    "CountryCode": "BZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Benin": {
+    "CountryCode": "BJ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Bermuda": {
+    "CountryCode": "BM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Bhutan": {
+    "CountryCode": "BT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Bolivia": {
+    "CountryCode": "BO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Bonaire": {
+    "CountryCode": "XB",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Bosnia And Herzegovina": {
+    "CountryCode": "BA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Botswana": {
+    "CountryCode": "BW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Brazil": {
+    "CountryCode": "BR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Brunei": {
+    "CountryCode": "BN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Bulgaria": {
+    "CountryCode": "BG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Burkina Faso": {
+    "CountryCode": "BF",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Burundi": {
+    "CountryCode": "BI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Cambodia": {
+    "CountryCode": "KH",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Cameroon": {
+    "CountryCode": "CM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Canada": {
+    "CountryCode": "CA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 7
+  },
+  "Canary Islands, The": {
+    "CountryCode": "IC",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Cape Verde": {
+    "CountryCode": "CV",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Cayman Islands": {
+    "CountryCode": "KY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Central African Republic": {
+    "CountryCode": "CF",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Chad": {
+    "CountryCode": "TD",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Chile": {
+    "CountryCode": "CL",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "China, Peoples Republic": {
+    "CountryCode": "CN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Colombia": {
+    "CountryCode": "CO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Commonwealth No. Mariana Islands": {
+    "CountryCode": "MP",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Comoros": {
+    "CountryCode": "KM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Congo": {
+    "CountryCode": "CG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Congo, The Democratic Republic Of": {
+    "CountryCode": "CD",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Cook Islands": {
+    "CountryCode": "CK",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Costa Rica": {
+    "CountryCode": "CR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Cote D Ivoire": {
+    "CountryCode": "CI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Croatia": {
+    "CountryCode": "HR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Cuba": {
+    "CountryCode": "CU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Curacao": {
+    "CountryCode": "XC",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Cyprus": {
+    "CountryCode": "CY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Czech Republic, The": {
+    "CountryCode": "CZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Denmark": {
+    "CountryCode": "DK",
+    "StationCode": "*",
+    "DHL Express Worldwide": 3
+  },
+  "Djibouti": {
+    "CountryCode": "DJ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Dominica": {
+    "CountryCode": "DM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Dominican Republic": {
+    "CountryCode": "DO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "East Timor": {
+    "CountryCode": "TP",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Ecuador": {
+    "CountryCode": "EC",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Egypt": {
+    "CountryCode": "EG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "El Salvador": {
+    "CountryCode": "SV",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Eritrea": {
+    "CountryCode": "ER",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Estonia": {
+    "CountryCode": "EE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Ethiopia": {
+    "CountryCode": "ET",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Falkland Islands": {
+    "CountryCode": "FK",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Faroe Islands": {
+    "CountryCode": "FO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Fiji": {
+    "CountryCode": "FJ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Finland": {
+    "CountryCode": "FI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 3
+  },
+  "France": {
+    "CountryCode": "FR",
+    "StationCode": "*",
+    "DHL Express Worldwide": null
+  },
+  "French Guyana": {
+    "CountryCode": "GF",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Gabon": {
+    "CountryCode": "GA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Gambia": {
+    "CountryCode": "GM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Georgia": {
+    "CountryCode": "GE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Germany": {
+    "CountryCode": "DE",
+    "StationCode": "*",
+    "DHL Express Worldwide": null
+  },
+  "Ghana": {
+    "CountryCode": "GH",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Gibraltar": {
+    "CountryCode": "GI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Greece": {
+    "CountryCode": "GR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Greenland": {
+    "CountryCode": "GL",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Grenada": {
+    "CountryCode": "GD",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Guadeloupe": {
+    "CountryCode": "GP",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Guam": {
+    "CountryCode": "GU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Guatemala": {
+    "CountryCode": "GT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Guernsey": {
+    "CountryCode": "GG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 1
+  },
+  "Guinea Republic": {
+    "CountryCode": "GN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Guinea-Bissau": {
+    "CountryCode": "GW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Guinea-Equatorial": {
+    "CountryCode": "GQ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Guyana (British)": {
+    "CountryCode": "GY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Haiti": {
+    "CountryCode": "HT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Honduras": {
+    "CountryCode": "HN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Hong Kong": {
+    "CountryCode": "HK",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Hungary": {
+    "CountryCode": "HU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+ "Iceland": {
+    "CountryCode": "IS",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "India": {
+    "CountryCode": "IN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Indonesia": {
+    "CountryCode": "ID",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Iran (Islamic Republic Of)": {
+    "CountryCode": "IR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Iraq": {
+    "CountryCode": "IQ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Ireland, Republic Of": {
+    "CountryCode": "IE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 1
+  },
+  "Israel": {
+    "CountryCode": "IL",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Italy": {
+    "CountryCode": "IT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 3
+  },
+  "Jamaica": {
+    "CountryCode": "JM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Japan": {
+    "CountryCode": "JP",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Jersey": {
+    "CountryCode": "JE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 1
+  },
+  "Jordan": {
+    "CountryCode": "JO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Kazakhstan": {
+    "CountryCode": "KZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Kenya": {
+    "CountryCode": "KE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Kiribati": {
+    "CountryCode": "KI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Korea, Republic Of (South K.)": {
+    "CountryCode": "KR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Korea, The D.P.R Of (North K.)": {
+    "CountryCode": "KP",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Kosovo": {
+    "CountryCode": "KV",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Kuwait": {
+    "CountryCode": "KW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Kyrgyzstan": {
+    "CountryCode": "KG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Lao Peoples Democratic Republic": {
+    "CountryCode": "LA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Latvia": {
+    "CountryCode": "LV",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Lebanon": {
+    "CountryCode": "LB",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Lesotho": {
+    "CountryCode": "LS",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Liberia": {
+    "CountryCode": "LR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Libya": {
+    "CountryCode": "LY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Lithuania": {
+    "CountryCode": "LT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Luxembourg": {
+    "CountryCode": "LU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 1
+  },
+  "Macau": {
+    "CountryCode": "MO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Macedonia, Republic Of": {
+    "CountryCode": "MK",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Madagascar": {
+    "CountryCode": "MG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Malawi": {
+    "CountryCode": "MW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Malaysia": {
+    "CountryCode": "MY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Maldives": {
+    "CountryCode": "MV",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Mali": {
+    "CountryCode": "ML",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Malta": {
+    "CountryCode": "MT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Marshall Islands": {
+    "CountryCode": "MH",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Martinique": {
+    "CountryCode": "MQ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Mauritania": {
+    "CountryCode": "MR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Mauritius": {
+    "CountryCode": "MU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Mayotte": {
+    "CountryCode": "YT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Mexico": {
+    "CountryCode": "MX",
+    "StationCode": "*",
+    "DHL Express Worldwide": 7
+  },
+  "Micronesia, Federated States Of": {
+    "CountryCode": "FM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Moldova, Republic Of": {
+    "CountryCode": "MD",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Mongolia": {
+    "CountryCode": "MN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Montenegro, Republic Of": {
+    "CountryCode": "ME",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Montserrat": {
+    "CountryCode": "MS",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Morocco": {
+    "CountryCode": "MA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Mozambique": {
+    "CountryCode": "MZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Myanmar": {
+    "CountryCode": "MM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Namibia": {
+    "CountryCode": "NA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Nauru, Republic Of": {
+    "CountryCode": "NR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Nepal": {
+    "CountryCode": "NP",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Netherlands, The": {
+    "CountryCode": "NL",
+    "StationCode": "*",
+    "DHL Express Worldwide": 1
+  },
+  "Nevis": {
+    "CountryCode": "XN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "New Caledonia": {
+    "CountryCode": "NC",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "New Zealand": {
+    "CountryCode": "NZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Nicaragua": {
+    "CountryCode": "NI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Niger": {
+    "CountryCode": "NE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Nigeria": {
+    "CountryCode": "NG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Niue": {
+    "CountryCode": "NU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Norway": {
+    "CountryCode": "NO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+ "Oman": {
+    "CountryCode": "OM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Pakistan": {
+    "CountryCode": "PK",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Palau": {
+    "CountryCode": "PW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.2
+  },
+  "Panama": {
+    "CountryCode": "PA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Papua New Guinea": {
+    "CountryCode": "PG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Paraguay": {
+    "CountryCode": "PY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Peru": {
+    "CountryCode": "PE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Philippines, The": {
+    "CountryCode": "PH",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Poland": {
+    "CountryCode": "PL",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Portugal": {
+    "CountryCode": "PT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 3
+  },
+  "Puerto Rico": {
+    "CountryCode": "PR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Qatar": {
+    "CountryCode": "QA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Reunion, Island Of": {
+    "CountryCode": "RE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Romania": {
+    "CountryCode": "RO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Russian Federation, The": {
+    "CountryCode": "RU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Rwanda": {
+    "CountryCode": "RW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Samoa": {
+    "CountryCode": "WS",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "San Marino": {
+    "CountryCode": "SM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 3
+  },
+  "Sao Tome And Principe": {
+    "CountryCode": "ST",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Saudi Arabia": {
+    "CountryCode": "SA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Senegal": {
+    "CountryCode": "SN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Serbia, Republic Of": {
+    "CountryCode": "RS",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Seychelles": {
+    "CountryCode": "SC",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Sierra Leone": {
+    "CountryCode": "SL",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Singapore": {
+    "CountryCode": "SG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Slovakia": {
+    "CountryCode": "SK",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Slovenia": {
+    "CountryCode": "SI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 4
+  },
+  "Solomon Islands": {
+    "CountryCode": "SB",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Somalia": {
+    "CountryCode": "SO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Somaliland, Rep Of (North Somalia)": {
+    "CountryCode": "XS",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "South Africa": {
+    "CountryCode": "ZA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Spain": {
+    "CountryCode": "ES",
+    "StationCode": "*",
+    "DHL Express Worldwide": 3
+  },
+  "Sri Lanka": {
+    "CountryCode": "LK",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "St. Barthelemy": {
+    "CountryCode": "XY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "St. Eustatius": {
+    "CountryCode": "XE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "St. Kitts": {
+    "CountryCode": "KN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+ "St. Lucia": {
+    "CountryCode": "LC",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "St. Maarten": {
+    "CountryCode": "XM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "St. Vincent": {
+    "CountryCode": "VC",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Sudan": {
+    "CountryCode": "SD",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Suriname": {
+    "CountryCode": "SR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Swaziland": {
+    "CountryCode": "SZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Sweden": {
+    "CountryCode": "SE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 3
+  },
+  "Switzerland": {
+    "CountryCode": "CH",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Syria": {
+    "CountryCode": "SY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+ "Tahiti": {
+    "CountryCode": "PF",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Taiwan": {
+    "CountryCode": "TW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Tajikistan": {
+    "CountryCode": "TJ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Tanzania": {
+    "CountryCode": "TZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Thailand": {
+    "CountryCode": "TH",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Togo": {
+    "CountryCode": "TG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Tonga": {
+    "CountryCode": "TO",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Trinidad And Tobago": {
+    "CountryCode": "TT",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Tunisia": {
+    "CountryCode": "TN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Turkey": {
+    "CountryCode": "TR",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "Turkmenistan": {
+    "CountryCode": "TM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Turks And Caicos Islands": {
+    "CountryCode": "TC",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Tuvalu": {
+    "CountryCode": "TV",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Uganda": {
+    "CountryCode": "UG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Ukraine": {
+    "CountryCode": "UA",
+    "StationCode": "*",
+    "DHL Express Worldwide": 5
+  },
+  "United Arab Emirates": {
+    "CountryCode": "AE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "United States Of America": {
+    "CountryCode": "US",
+    "StationCode": "*",
+    "DHL Express Worldwide": 6
+  },
+  "Uruguay": {
+    "CountryCode": "UY",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Uzbekistan": {
+    "CountryCode": "UZ",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Vanuatu": {
+    "CountryCode": "VU",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Venezuela": {
+    "CountryCode": "VE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Vietnam": {
+    "CountryCode": "VN",
+    "StationCode": "*",
+    "DHL Express Worldwide": 8
+  },
+  "Virgin Islands (British)": {
+    "CountryCode": "VG",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Virgin Islands (Us)": {
+    "CountryCode": "VI",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Yemen, Republic Of": {
+    "CountryCode": "YE",
+    "StationCode": "*",
+    "DHL Express Worldwide": 9.1
+  },
+  "Zambia": {
+    "CountryCode": "ZM",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  },
+  "Zimbabwe": {
+    "CountryCode": "ZW",
+    "StationCode": "*",
+    "DHL Express Worldwide": 10
+  }
+}
