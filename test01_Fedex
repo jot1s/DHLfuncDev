@@ -50,15 +50,12 @@ sheet_obj = wb_obj[sheetName]   ## checking the sheet object in the page call "S
     # connection.close()
     # return data
 
-def CheckInfo_API(trackingNumber, x, y):
-    print("trackingNumber: ", trackingNumber  , "Row: " ,x , "Column: " ,y)
+# def CheckInfo_API(trackingNumber, x, y):
+#     print("trackingNumber: ", trackingNumber  , "Row: " ,x , "Column: " ,y)
     
     
 
-def track_package(tracking_number):
-    
-    access_token = "l7bc91508d5c6d49319ecc40c33a08e4ab"
-    
+def track_package(tracking_number , access_token, client_secret, locale="en_US"):
     url = "/track/v1/trackingnumbers"
     
     payload = {
@@ -67,8 +64,9 @@ def track_package(tracking_number):
     
     headers = {
         'Content-Type': "application/json",
-        'X-locale': "en_US",
-        'Authorization': "Bearer " + access_token
+        'X-locale': locale,
+        'Authorization': "Bearer " + access_token,
+        'clientSecret': client_secret
     }
     
     # Establish connection
@@ -93,56 +91,59 @@ def track_package(tracking_number):
 
 # Example usage:  Testing 
 tracking_number = "776082765592"
+client_secret = "XXXXX"
+access_token = "l7bc91508d5c6d49319ecc40c33a08e4ab"  ## UK ? 
+locale = "en_EU"  # UK   EU packages
 
-tracking_info = track_package(tracking_number)
+tracking_info = track_package(tracking_number,access_token, client_secret, locale)
 
     
 
-def WriteInfo_excel(x, y, value):
-    print("WriteInfo_excel: ", x, y, value)
-    sheet_obj.cell(x, y).value = value
-    wb_obj.save(path)
+# def WriteInfo_excel(x, y, value):
+#     print("WriteInfo_excel: ", x, y, value)
+#     sheet_obj.cell(x, y).value = value
+#     wb_obj.save(path)
 
 
 
-sg.theme('Dark Brown')   
+# sg.theme('Dark Brown')   
 
 
-layout = [
+# layout = [
 
-    [sg.Text("Auto fill-in Excel" , justification='center',size=(50,1))],
-    [sg.Button('Open Excel'), sg.Button('TrackingNumber API fillin')]
+#     [sg.Text("Auto fill-in Excel" , justification='center',size=(50,1))],
+#     [sg.Button('Open Excel'), sg.Button('TrackingNumber API fillin')]
     
-]
+# ]
 
-window = sg.Window("Column Demo", layout)
-while True:
-    event, values = window.read()
+# window = sg.Window("Column Demo", layout)
+# while True:
+#     event, values = window.read()
     
-    if event == "Open Excel":
-        os.startfile(path)
-        break
+#     if event == "Open Excel":
+#         os.startfile(path)
+#         break
     
-    if event == "TrackingNumber API fillin":
+#     if event == "TrackingNumber API fillin":
 
-        for i in range(1, 10):   ## for loop row to check trackingnumber is exist
-            status_row = sheet_obj.cell( baseRow + i, 3).value
-            trackingNumber_row  = sheet_obj.cell( baseRow + i, 1).value  
-            # print("sheet_obj: ", sheet_obj.cell( baseRow + i, 3).value)  ##Checking Status
+#         for i in range(1, 10):   ## for loop row to check trackingnumber is exist
+#             status_row = sheet_obj.cell( baseRow + i, 3).value
+#             trackingNumber_row  = sheet_obj.cell( baseRow + i, 1).value  
+#             # print("sheet_obj: ", sheet_obj.cell( baseRow + i, 3).value)  ##Checking Status
             
-            if trackingNumber_row == None:
-                break
+#             if trackingNumber_row == None:
+#                 break
 
-            if status_row == None and trackingNumber_row != None:  ##  is None
-                # time.sleep(0.5)  # Add a delay of 0.2 seconds   
-                CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
-            else:
-                print("Status and TrackingNumber == None ", status_row)
+#             if status_row == None and trackingNumber_row != None:  ##  is None
+#                 # time.sleep(0.5)  # Add a delay of 0.2 seconds   
+#                 CheckInfo_API(sheet_obj.cell(baseRow + i, 1).value , baseRow + i, 1 )
+#             else:
+#                 print("Status and TrackingNumber == None ", status_row)
         
         
         
   
-window.close()
+# window.close()
 
 
 #     if (sheet_obj[
