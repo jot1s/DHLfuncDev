@@ -76,7 +76,7 @@ def track_package_test(token):
     "trackingInfo": [
         {
         "trackingNumberInfo": {
-            "trackingNumber": "776054437620"
+            "trackingNumber": "776218104249"
         }
         }
     ],
@@ -94,8 +94,16 @@ def track_package_test(token):
 
     response = requests.post(url, data=payload_json, headers=headers)
 
-    print(response.text)
-
+    # print(response.text)
+    
+    trackingNumber = response.json()['output']['completeTrackResults'][0]['trackingNumber']
+    latestStatusDetail = response.json()['output']['completeTrackResults'][0]['trackResults'][0]['latestStatusDetail']
+    statusByLocale = latestStatusDetail['statusByLocale']
+    description = latestStatusDetail['description']
+    
+    print(trackingNumber)
+    print(latestStatusDetail)
+    print(statusByLocale + " || " + description)
 
 
 
