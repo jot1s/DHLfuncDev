@@ -61,68 +61,22 @@ fedexToken = ""
 #     print("trackingNumber: ", trackingNumber  , "Row: " ,x , "Column: " ,y)
     
     
-
-def track_package(tracking_number , access_token, client_secret, locale="en_US"):
-    url = "/track/v1/trackingnumbers"
     
-    payload = {
-        "trackingNumber": tracking_number
-    }
-    
-    headers = {
-        'Content-Type': "application/json",
-        'X-locale': locale,
-        'Authorization': "Bearer " + access_token,
-        'clientSecret': client_secret
-    }
-    
-    # Establish connection
-    connection = http.client.HTTPSConnection("apis-sandbox.fedex.com")
-    
-    # Send request
-    connection.request("POST", url, json.dumps(payload), headers)
-    
-   
-    # Get response
-    response = connection.getresponse()
-    print(response.status)
-    print(response.reason)
-    if response.status == 200:
-        data = response.read()
-        connection.close()
-        return json.loads(data.decode("utf-8"))
-    else:
-        connection.close()
-        return {"error": "Failed to track package. Status code: {}".format(response.status)}
-
-
-# Example usage:  Testing 
-tracking_number = "123456789012"
-client_secret = "d4549e4d40cf4546af18d8dea1d71335"
-access_token = "l7bc91508d5c6d49319ecc40c33a08e4ab"  ## UK ? 
-locale = "en_EU"  # UK   EU packages
-
-# tracking_info = track_package(tracking_number,access_token, client_secret, locale)
-
-    
-    
-    
-    
-
-
 
 
 def track_package_test(token):
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    url = "https://apis-sandbox.fedex.com/track/v1/trackingnumbers"
+    # url = "https://apis-sandbox.fedex.com/track/v1/trackingnumbers"
+    url = "https://apis.fedex.com/track/v1/trackingnumbers"
+    
 
     # Define the payload with the tracking number
     payload = {
     "trackingInfo": [
         {
         "trackingNumberInfo": {
-            "trackingNumber": "776072125180"
+            "trackingNumber": "776054437620"
         }
         }
     ],
@@ -134,7 +88,7 @@ def track_package_test(token):
 
     headers = {
         'Content-Type': "application/json",
-        'X-locale': "en_GB",
+        # 'X-locale': "de_DE",
         'Authorization': "Bearer "+token  # Replace YOUR_ACCESS_TOKEN with your actual access token
     }
 
@@ -149,11 +103,15 @@ def track_package_test(token):
 def FedexToken_func ():
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    url = "https://apis-sandbox.fedex.com/oauth/token"
+    # url = "https://apis-sandbox.fedex.com/oauth/token"
+    url = "https://apis.fedex.com/oauth/token"
 
-    # Define your API key and client secret
-    api_key = "l7aed6bf7203184b21bc82bc3e39a6d333"
-    client_secret = "ae6246f9ff9a4c7d9f49c6f665a765a1"
+    # Define your API key and client secret    ///  sendBox
+    # api_key = "l7aed6bf7203184b21bc82bc3e39a6d333"
+    # client_secret = "ae6246f9ff9a4c7d9f49c6f665a765a1"
+    
+    api_key = "l727fcc0181cb045ffb5fb61d1eeeff3d2"
+    client_secret = "fa254dbe09d5421b9cc2fe514e8670e7"
 
     # Define payload with API key and client secret
     payload = {
