@@ -10,6 +10,9 @@ import xlsxwriter as xl_writer
 import PySimpleGUI as sg
 import pandas as pd
 
+    
+import requests
+
 # path = "C:\\game\\DHLfuncDev\\DHL_API_Sheet.xlsx"
 
 current_directory = os.path.dirname(__file__)
@@ -22,6 +25,10 @@ wb_obj = xl_read.load_workbook(path)
 sheetName = "Sheet1"
 baseRow = 1   ## base row start with row 2
 sheet_obj = wb_obj[sheetName]   ## checking the sheet object in the page call "Sheet1"
+
+fedexToken = ""
+
+
 
 # def SendAPI(trackingNumber):
     # params = urllib.parse.urlencode({
@@ -90,14 +97,144 @@ def track_package(tracking_number , access_token, client_secret, locale="en_US")
 
 
 # Example usage:  Testing 
-tracking_number = "776082765592"
-client_secret = "XXXXX"
+tracking_number = "123456789012"
+client_secret = "d4549e4d40cf4546af18d8dea1d71335"
 access_token = "l7bc91508d5c6d49319ecc40c33a08e4ab"  ## UK ? 
 locale = "en_EU"  # UK   EU packages
 
-tracking_info = track_package(tracking_number,access_token, client_secret, locale)
+# tracking_info = track_package(tracking_number,access_token, client_secret, locale)
 
     
+    
+    
+    
+
+
+
+
+def track_package_test(token):
+
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    url = "https://apis-sandbox.fedex.com/track/v1/trackingnumbers"
+
+    # Define the payload with the tracking number
+    payload = {
+    "trackingInfo": [
+        {
+        "trackingNumberInfo": {
+            "trackingNumber": "776072125180"
+        }
+        }
+    ],
+    "includeDetailedScans": True
+    }
+
+    # Convert the payload to JSON format
+    payload_json = json.dumps(payload)
+
+    headers = {
+        'Content-Type': "application/json",
+        'X-locale': "en_GB",
+        'Authorization': "Bearer "+token  # Replace YOUR_ACCESS_TOKEN with your actual access token
+    }
+
+    response = requests.post(url, data=payload_json, headers=headers)
+
+    print(response.text)
+
+
+
+
+
+def FedexToken_func ():
+
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    url = "https://apis-sandbox.fedex.com/oauth/token"
+
+    # Define your API key and client secret
+    api_key = "l7aed6bf7203184b21bc82bc3e39a6d333"
+    client_secret = "ae6246f9ff9a4c7d9f49c6f665a765a1"
+
+    # Define payload with API key and client secret
+    payload = {
+        'grant_type': 'client_credentials',
+        'client_id': api_key,
+        'client_secret': client_secret
+    }
+
+    # Encode payload as form data
+    encoded_payload = "&".join([f"{key}={value}" for key, value in payload.items()])
+
+    headers = {
+        'Content-Type': "application/x-www-form-urlencoded"
+    }
+    response = requests.post(url, data=encoded_payload, headers=headers)
+    print(response.text)
+    print(response.status_code)
+    
+    response_data = response.json()
+    access_token = response_data.get('access_token')
+    # print("Access Token:", access_token)
+    fedexToken =access_token
+    
+    track_package_test(fedexToken)
+    
+    
+FedexToken_func()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # def WriteInfo_excel(x, y, value):
 #     print("WriteInfo_excel: ", x, y, value)
